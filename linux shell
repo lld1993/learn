@@ -1,2 +1,7 @@
 查看linux版本
 cat /etc/redhat-release
+
+
+centos7 开放80端口
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd  --reload
